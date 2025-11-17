@@ -28,9 +28,25 @@ These files are identical to the dataset used in the Hologram experiments and
 include all tables necessary to reproduce the joins in Q1–Q10.
 
 
-### `tpch`
+## TPC-H dataset (SQLite / CSV)
 
-TPC-H benchmark schema for testing Hologram on a realistic multi-table setting.
+The TPC-H benchmark is used in Hologram to evaluate join path selection and
+query behavior on a realistic decision-support schema.
 
-- Data: `data/tpch/`
-- Queries: `data/tpch/queries/`
+This repository only contains the **queries** used in our experiments:
+
+- `data/tpch/queries/` – TPC-H SQL queries 
+
+The actual TPC-H data is **not stored in this repository**. It is exported from
+our local SQLite database as CSV files and hosted externally on Google Drive:
+
+👉 **Full TPC-H CSV data**  
+https://drive.google.com/drive/folders/1vp1YN8_1d9xVAdwxJQkjSEkHrFTAhfpl
+
+To reproduce the experiments:
+
+1. Download the CSV files from the link above.
+2. Either:
+   - import them into your own database system, or
+   - recreate a local SQLite database and point Hologram to it.
+
