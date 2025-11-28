@@ -1,5 +1,3 @@
--- PerfectPet benchmark queries (Q1–Q10)
-
 SET search_path TO clean_db, public;
 
 --------------------------------------------------

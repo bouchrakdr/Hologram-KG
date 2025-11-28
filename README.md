@@ -25,7 +25,7 @@ The full PerfectPet CSV data is available here:
 https://drive.google.com/drive/folders/14uzlaAoakl28Gm22awr82gJQaXOVDAPd?usp=sharing
 
 These files are identical to the dataset used in the Hologram experiments and
-include all tables necessary to reproduce the joins in Q1–Q10.
+include all tables necessary to reproduce the joins in Q1–Q9.
 
 
 ## TPC-H dataset (SQLite / CSV)
