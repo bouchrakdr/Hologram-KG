@@ -15,7 +15,7 @@ GitHub’s 100MB file limit.
 ### Files included
 
 - `data/perfect_pet/queries/perfect_pet_queries.sql`  
-  Contains the 10 benchmark queries (Q1–Q10) used in the experiments.
+  Contains the 9 benchmark queries (Q1–Q9) used in the experiments.
 
 ### Full dataset (hosted externally)
 

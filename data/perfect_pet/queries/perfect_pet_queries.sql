@@ -60,17 +60,7 @@ JOIN clean_db.appointment_slot apsl   ON apsl.id_appointment = ap.id_appointment
 JOIN clean_db.slot sl                 ON sl.id_slot         = apsl.id_slot;
 
 --------------------------------------------------
--- Q8 — Long chain with intersection (historization + booked slots)
---------------------------------------------------
-SELECT d.id_doctor
-FROM clean_db.doctor d
-JOIN clean_db.doctor_historization dh ON dh.id_doctor = d.id_doctor
-JOIN clean_db.slot sl                  ON sl.id_doctor = d.id_doctor
-JOIN clean_db.appointment_slot apsl    ON apsl.id_slot = sl.id_slot
-JOIN clean_db.appointment ap           ON ap.id_appointment = apsl.id_appointment;
-
---------------------------------------------------
--- Q9 — Wide terminals (chain+star with many columns)
+-- Q8 — 
 --------------------------------------------------
 SELECT
   o.first_name        AS owner_first_name,
@@ -93,7 +83,7 @@ JOIN clean_db.slot sl                 ON sl.id_slot         = apsl.id_slot
 JOIN clean_db.doctor d                ON d.id_doctor        = sl.id_doctor;
 
 --------------------------------------------------
--- Q10 — Owner–Animal via microchip bridge
+-- Q9 
 --------------------------------------------------
 SELECT o.id_owner, o.first_name, a.id_animal, a.name, a.species
 FROM clean_db.owner o
